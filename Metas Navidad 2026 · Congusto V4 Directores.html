@@ -1,0 +1,811 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Metas Navidad 2026 · Congusto</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600;700;800&display=swap">
+
+<style>
+:root {
+  --yellow:  #F7BC1A;
+  --yellow-d:#c99510;
+  --blue:    #3DB8E8;
+  --blue-d:  #1a8ab8;
+  --dark:    #0E1420;
+  --dark2:   #161E2E;
+  --dark3:   #1E2A3E;
+  --border:  #2A3A54;
+  --fg:      #EEF2F8;
+  --fg2:     #A8B8D0;
+  --muted:   #607090;
+  --green:   #2ED17A;
+  --red:     #FF5C38;
+  color-scheme: dark;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:var(--dark);color:var(--fg);
+  font-family:'Barlow',system-ui,sans-serif;
+  font-size:16px;line-height:1.6;
+  padding-left:max(0px,env(safe-area-inset-left,0px));
+  padding-right:max(0px,env(safe-area-inset-right,0px));
+}
+
+/* ── HERO ── */
+.hero{
+  background:var(--yellow);position:relative;overflow:hidden;
+  padding:36px max(24px,env(safe-area-inset-left,0px)) 32px;
+}
+.hero::before{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(circle at 88% 15%,rgba(61,184,232,.3) 0%,transparent 45%),
+    radial-gradient(circle at 8% 85%,rgba(255,255,255,.14) 0%,transparent 38%);
+}
+.hero-inner{position:relative;max-width:860px;margin:0 auto}
+.hero-eyebrow{
+  font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;
+  color:rgba(14,20,32,.55);margin-bottom:12px;
+}
+/* "¡Que no pare!" repetido */
+.hero-chant{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:clamp(22px,4.5vw,38px);font-weight:800;
+  text-transform:uppercase;color:var(--dark);
+  opacity:.65;line-height:1;letter-spacing:.5px;
+  margin-bottom:4px;
+}
+/* "EL PLAN" enorme en azul */
+.hero-plan{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:clamp(90px,20vw,196px);font-weight:900;
+  line-height:.85;text-transform:uppercase;
+  color:var(--blue);letter-spacing:-3px;
+  margin-bottom:20px;
+  -webkit-text-stroke:0px transparent;
+  text-shadow:4px 4px 0 rgba(14,20,32,.18);
+}
+.hero-badges{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.hbadge{
+  background:var(--dark);color:var(--yellow);
+  font-size:11px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;
+  border-radius:20px;padding:5px 13px;
+}
+.hbadge.b{background:var(--blue);color:var(--dark)}
+.hero-deco{
+  position:absolute;right:-8px;top:0;font-size:72px;
+  line-height:1;opacity:.15;pointer-events:none;user-select:none;
+}
+
+/* ── Shared layout ── */
+.wrap{max-width:900px;margin:0 auto;padding-inline:max(16px,env(safe-area-inset-left,0px))}
+
+/* ── Tabs ── */
+.tabs-bar{
+  background:var(--dark2);border-bottom:2px solid var(--border);
+  position:sticky;top:env(safe-area-inset-top,0px);z-index:20;
+}
+.tabs{
+  max-width:900px;margin:0 auto;
+  padding-inline:max(16px,env(safe-area-inset-left,0px));
+  display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;
+}
+.tabs::-webkit-scrollbar{display:none}
+.tab{
+  font-size:13px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;
+  padding:14px 18px 16px;border:none;background:none;color:var(--muted);
+  cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;
+  white-space:nowrap;transition:color .15s,border-color .15s;flex-shrink:0;
+}
+.tab:hover{color:var(--fg2)}
+.tab.on{color:var(--yellow);border-bottom-color:var(--yellow)}
+
+/* ── Sections ── */
+.sec{padding-block:28px}
+.sec+.sec{border-top:1px solid var(--border)}
+.sec-lbl{
+  font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;
+  color:var(--muted);margin-bottom:16px;
+}
+/* Intro text — narrative lead */
+.lead{
+  font-size:16px;color:var(--fg2);line-height:1.65;
+  margin-bottom:20px;max-width:680px;
+}
+.lead strong{color:var(--fg)}
+
+/* ── KPI row ── */
+.kpis{display:flex;gap:10px;flex-wrap:wrap}
+.kpi{
+  background:var(--dark2);border:1px solid var(--border);border-radius:10px;
+  padding:16px 20px;flex:1 1 150px;min-width:130px;
+}
+.kpi.yl{border-color:var(--yellow);background:color-mix(in srgb,var(--yellow) 8%,var(--dark2))}
+.kpi.bl{border-color:var(--blue);background:color-mix(in srgb,var(--blue) 8%,var(--dark2))}
+.kpi.gn{border-color:var(--green);background:color-mix(in srgb,var(--green) 8%,var(--dark2))}
+.kpi-l{font-size:10px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+.kpi-v{font-family:'Barlow Condensed',sans-serif;font-size:38px;font-weight:800;font-variant-numeric:tabular-nums;line-height:1}
+.kpi-v.yl{color:var(--yellow)}.kpi-v.bl{color:var(--blue)}.kpi-v.gn{color:var(--green)}
+.kpi-s{font-size:12px;color:var(--muted);margin-top:3px}
+
+/* ── Productos campaña (Resumen) ── */
+.prod-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px;margin-bottom:4px}
+.pc{
+  background:var(--dark2);border:1px solid var(--border);border-radius:10px;
+  padding:14px 16px;
+}
+.pc.velita{border-color:color-mix(in srgb,var(--blue) 45%,transparent)}
+.pc-name{font-size:13px;font-weight:700;color:var(--fg);margin-bottom:2px}
+.pc-name small{display:block;font-size:11px;font-weight:400;color:var(--muted);margin-top:1px}
+.pc-total{font-family:'Barlow Condensed',sans-serif;font-size:30px;font-weight:800;color:var(--yellow);line-height:1;margin-top:6px}
+.pc.velita .pc-total{color:var(--blue)}
+.pc-dia{font-size:12px;color:var(--muted);margin-top:2px}
+
+/* ── Tabla ── */
+.tbl-wrap{overflow-x:auto;border-radius:10px;border:1px solid var(--border)}
+table{border-collapse:collapse;width:100%;min-width:460px}
+thead th{
+  font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;
+  color:var(--muted);text-align:right;padding:10px 14px;
+  border-bottom:1px solid var(--border);background:var(--dark3);white-space:nowrap;
+}
+thead th:first-child{text-align:left}
+tbody tr{border-bottom:1px solid var(--border);transition:background .1s}
+tbody tr:last-child{border-bottom:none}
+tbody tr:hover{background:var(--dark3)}
+tbody td{padding:12px 14px;font-size:14px;font-variant-numeric:tabular-nums;text-align:right;color:var(--fg2)}
+tbody td:first-child{text-align:left;font-weight:600;color:var(--fg)}
+tr.tot td{font-weight:700;color:var(--fg);background:var(--dark3);border-top:1px solid var(--border)}
+.up{color:var(--green);font-weight:700}
+.sb{font-size:10px;font-weight:700;letter-spacing:.7px;text-transform:uppercase;border-radius:4px;padding:1px 6px;margin-left:5px;vertical-align:middle}
+.sb-g{background:rgba(247,188,26,.12);color:var(--yellow);border:1px solid rgba(247,188,26,.3)}
+.sb-p{background:rgba(61,184,232,.12);color:var(--blue);border:1px solid rgba(61,184,232,.3)}
+
+/* ── ROI ── */
+.roi-rows{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
+.roi-r{
+  display:flex;justify-content:space-between;align-items:flex-start;
+  padding:14px 18px;border-radius:8px;gap:12px;flex-wrap:wrap;
+}
+.roi-r.inc{background:color-mix(in srgb,var(--green) 9%,var(--dark2));border:1px solid color-mix(in srgb,var(--green) 25%,transparent)}
+.roi-r.cst{background:color-mix(in srgb,var(--red) 9%,var(--dark2));border:1px solid color-mix(in srgb,var(--red) 25%,transparent)}
+.roi-r.net{background:color-mix(in srgb,var(--yellow) 9%,var(--dark2));border:1px solid color-mix(in srgb,var(--yellow) 32%,transparent)}
+.roi-l{font-size:14px;font-weight:600;color:var(--fg2);flex:1 1 200px}
+.roi-l small{display:block;font-size:11px;color:var(--muted);margin-top:2px;font-weight:400}
+.roi-n{font-family:'Barlow Condensed',sans-serif;font-size:24px;font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap;flex-shrink:0}
+.roi-r.inc .roi-n{color:var(--green)}
+.roi-r.cst .roi-n{color:var(--red)}
+.roi-r.net .roi-n{color:var(--yellow)}
+.roi-big{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.roi-bar-lbl{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
+.roi-bar{flex:1 1 80px;height:10px;background:var(--dark3);border-radius:10px;overflow:hidden}
+.roi-bar-fill{height:100%;border-radius:10px;background:var(--yellow);width:80%}
+.roi-pct{font-family:'Barlow Condensed',sans-serif;font-size:48px;font-weight:900;color:var(--yellow);line-height:1}
+
+/* ── Inversión ── */
+.inv{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:8px}
+.inv-i{background:var(--dark2);border:1px solid var(--border);border-radius:8px;padding:10px 14px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.inv-n{font-size:13px;color:var(--fg2);font-weight:500}
+.inv-v{font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:800;color:var(--fg)}
+
+/* ── Argumento cards (Resumen) ── */
+.arg-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.arg{background:var(--dark2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;font-size:14px;color:var(--fg2);line-height:1.6}
+.arg strong{display:block;font-weight:700;color:var(--fg);margin-bottom:5px;font-size:13px;letter-spacing:.3px}
+
+/* ══════════════ MI PUNTO ══════════════ */
+.pt-selector{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.pt-btn{
+  font-size:13px;font-weight:700;letter-spacing:.7px;text-transform:uppercase;
+  padding:9px 16px;border-radius:22px;
+  border:1.5px solid var(--border);background:var(--dark2);color:var(--muted);
+  cursor:pointer;transition:all .15s;
+}
+.pt-btn:hover{color:var(--fg);border-color:var(--fg2)}
+.pt-btn.on{background:var(--yellow);color:var(--dark);border-color:var(--yellow)}
+.pt-btn.on.azul{background:var(--blue);color:var(--dark);border-color:var(--blue)}
+
+.pt-card{display:none}
+.pt-card.vis{display:block}
+
+/* Bloque de sustento del % */
+.sustento{
+  background:var(--dark2);border:1px solid var(--border);border-radius:12px;
+  padding:20px 22px;margin-bottom:16px;
+}
+.sustento-head{
+  display:flex;align-items:baseline;gap:14px;margin-bottom:12px;flex-wrap:wrap;
+}
+.sustento-pct{
+  font-family:'Barlow Condensed',sans-serif;font-size:64px;font-weight:900;
+  color:var(--yellow);line-height:.9;flex-shrink:0;
+}
+.sustento-titulo{font-size:17px;font-weight:700;color:var(--fg);line-height:1.25}
+.sustento-titulo small{display:block;font-size:13px;font-weight:400;color:var(--muted);margin-top:3px}
+.sustento-razones{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:8px;
+}
+.sr{
+  background:var(--dark3);border-radius:8px;padding:11px 14px;
+  font-size:13px;color:var(--fg2);line-height:1.5;
+}
+.sr strong{display:block;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+
+/* Bloque productos campaña por punto */
+.prod-bloque{margin-bottom:16px}
+.bloque-titulo{
+  font-size:14px;font-weight:700;letter-spacing:.3px;color:var(--fg);
+  margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--border);
+}
+.bloque-titulo span{color:var(--muted);font-weight:400;font-size:12px;margin-left:6px}
+.prod-row{
+  background:var(--dark2);border:1px solid var(--border);border-radius:8px;
+  padding:13px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  margin-bottom:8px;
+}
+.prod-row:last-child{margin-bottom:0}
+.pr-name{font-weight:700;color:var(--fg);font-size:15px;flex:1 1 150px}
+.pr-name small{display:block;font-size:11px;font-weight:400;color:var(--muted);margin-top:1px}
+.pr-total{font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:800;color:var(--yellow);white-space:nowrap}
+.pr-dia{font-size:13px;font-weight:700;color:var(--muted);white-space:nowrap}
+.pr-arg{font-size:12px;color:var(--fg2);line-height:1.45;width:100%;padding-top:6px;border-top:1px solid var(--border);margin-top:4px}
+.pr-arg b{color:var(--yellow)}
+.prod-row.velita{border-color:color-mix(in srgb,var(--blue) 42%,transparent)}
+.prod-row.velita .pr-total{color:var(--blue)}
+.prod-row.velita .pr-arg b{color:var(--blue)}
+
+.velita-pico{
+  background:color-mix(in srgb,var(--blue) 10%,var(--dark2));
+  border:1px solid color-mix(in srgb,var(--blue) 30%,transparent);
+  border-radius:8px;padding:12px 16px;font-size:13px;color:var(--fg2);
+  margin-top:10px;line-height:1.6;
+}
+.velita-pico strong{color:var(--blue)}
+
+/* Bloque meta en dinero */
+.dinero-box{
+  background:linear-gradient(135deg,var(--yellow) 0%,#e8a800 100%);
+  border-radius:12px;padding:20px 24px;margin-bottom:16px;color:var(--dark);
+}
+.dinero-box.azul{background:linear-gradient(135deg,var(--blue) 0%,var(--blue-d,#1a8ab8) 100%)}
+.db-lbl{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;opacity:.65;margin-bottom:5px}
+.db-titulo{font-family:'Barlow Condensed',sans-serif;font-size:clamp(26px,5vw,40px);font-weight:900;line-height:1.05;text-wrap:balance}
+.db-sub{font-size:13px;font-weight:600;margin-top:8px;opacity:.75}
+
+.dias-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}
+.dia-c{background:var(--dark2);border:1px solid var(--border);border-radius:10px;padding:14px 10px;text-align:center}
+.dia-v{font-family:'Barlow Condensed',sans-serif;font-size:clamp(18px,4vw,26px);font-weight:800;font-variant-numeric:tabular-nums;color:var(--fg);line-height:1}
+.dia-v.yl{color:var(--yellow)}
+.dia-l{font-size:11px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--muted);margin-top:4px}
+
+/* ── Metodología ── */
+.metodo{background:var(--dark2);border:1px solid var(--border);border-radius:10px;padding:20px 22px;font-size:14px;color:var(--fg2);line-height:1.7}
+.metodo h4{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.metodo ul{padding-left:18px}
+.metodo li{margin-bottom:8px}
+.metodo li::marker{color:var(--yellow)}
+
+.hidden{display:none!important}
+
+@media(max-width:520px){
+  .dias-grid{gap:6px}
+  .dia-v{font-size:17px}
+  .kpi-v{font-size:28px}
+  .hero-plan{letter-spacing:-1px}
+}
+</style>
+
+<!-- ═══════ HERO ═══════ -->
+<div class="hero">
+  <div class="hero-deco">🎄✨🎉</div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">¡Congusto! · Campaña Navidad 2026 · Plan de Metas</div>
+    <div class="hero-chant">¡Que no pare! · ¡Que no pare! · ¡Que no pare!</div>
+    <div class="hero-plan">El Plan</div>
+    <div class="hero-badges">
+      <span class="hbadge">Nov 24 – Ene 5 · 43 días</span>
+      <span class="hbadge b">6 tiendas · Red Cali &amp; Palmira</span>
+      <span class="hbadge">5 productos de campaña</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ TABS ═══════ -->
+<div class="tabs-bar">
+  <div class="tabs">
+    <button class="tab on" onclick="setMain('resumen')">📊 Resumen</button>
+    <button class="tab" onclick="setMain('punto')">📍 Mi Punto</button>
+    <button class="tab" onclick="setMain('metodo')">📐 Metodología</button>
+  </div>
+</div>
+
+<!-- ═══════════════════ RESUMEN ═══════════════════ -->
+<div id="tab-resumen" class="wrap">
+
+  <!-- 1. Los productos: qué vendemos -->
+  <div class="sec">
+    <div class="sec-lbl">Bloque 1 — Los productos de la campaña</div>
+    <p class="lead">Esta campaña tiene <strong>5 productos activos</strong>. Para las tiendas grandes (Autopista, Portal, Campestre) aplican todos. Para las pequeñas (La 70, Pasoancho, Noruega) aplican solo las velitas durante los primeros 14 días.</p>
+    <div class="prod-cards">
+      <div class="pc">
+        <div class="pc-name">Buñuelo mini<small>Paquetes x6, x9 o x12 · Solo tiendas grandes</small></div>
+        <div class="pc-total">490 paquetes</div>
+        <div class="pc-dia">Total red · 43 días</div>
+      </div>
+      <div class="pc">
+        <div class="pc-name">Buñuelo normal<small>Unidad individual · Solo tiendas grandes</small></div>
+        <div class="pc-total">270 unidades</div>
+        <div class="pc-dia">Total red · 43 días</div>
+      </div>
+      <div class="pc">
+        <div class="pc-name">Pan de bono<small>Unidad individual · Solo tiendas grandes</small></div>
+        <div class="pc-total">205 unidades</div>
+        <div class="pc-dia">Total red · 43 días</div>
+      </div>
+      <div class="pc">
+        <div class="pc-name">Combo buñuelos<small>Café $5.900 · Coca Cola $6.900 · Solo tiendas grandes</small></div>
+        <div class="pc-total">125 combos</div>
+        <div class="pc-dia">Total red · 43 días</div>
+      </div>
+      <div class="pc velita">
+        <div class="pc-name">Velitas San Jorge x10 🕯<small>Todas las tiendas · Nov 24 – Dic 7 (14 días)</small></div>
+        <div class="pc-total">240 paquetes</div>
+        <div class="pc-dia">Total red · pico Dic 5–7</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. La meta de ventas general -->
+  <div class="sec">
+    <div class="sec-lbl">Bloque 2 — Meta de ventas por tienda en diciembre</div>
+    <p class="lead">Tomamos lo que vendió cada tienda en diciembre 2025 y le aplicamos un crecimiento exigido. Este incremento no es un número al azar: está sustentado en el comportamiento del año, la estacionalidad probada de diciembre y el efecto que esperamos de la campaña.</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Tienda</th>
+            <th>Dic 2025 real</th>
+            <th>Meta dic 2026</th>
+            <th>Crec. exigido</th>
+            <th>+ Pesos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Plaza Autopista <span class="sb sb-g">Grande</span></td>
+            <td>$156.692.475</td>
+            <td><strong>$180.196.346</strong></td>
+            <td class="up">+15%</td>
+            <td>+$23.503.871</td>
+          </tr>
+          <tr>
+            <td>Portal del Sur <span class="sb sb-g">Grande</span></td>
+            <td>$64.627.051</td>
+            <td><strong>$74.321.109</strong></td>
+            <td class="up">+15%</td>
+            <td>+$9.694.058</td>
+          </tr>
+          <tr>
+            <td>Plaza Campestre <span class="sb sb-g">Grande</span></td>
+            <td>$32.559.361</td>
+            <td><strong>$36.466.484</strong></td>
+            <td class="up">+12%</td>
+            <td>+$3.907.123</td>
+          </tr>
+          <tr>
+            <td>La 70 <span class="sb sb-p">Pequeña</span></td>
+            <td>$9.482.315</td>
+            <td><strong>$10.904.662</strong></td>
+            <td class="up">+15%</td>
+            <td>+$1.422.347</td>
+          </tr>
+          <tr>
+            <td>Pasoancho <span class="sb sb-p">Pequeña</span></td>
+            <td>$11.570.294</td>
+            <td><strong>$13.305.838</strong></td>
+            <td class="up">+15%</td>
+            <td>+$1.735.544</td>
+          </tr>
+          <tr>
+            <td>Noruega <span class="sb sb-p">Pequeña</span></td>
+            <td>$4.005.610</td>
+            <td><strong>$4.486.283</strong></td>
+            <td class="up">+12%</td>
+            <td>+$480.673</td>
+          </tr>
+          <tr class="tot">
+            <td>TOTAL RED</td>
+            <td>$278.937.106</td>
+            <td>$319.680.722</td>
+            <td class="up">+14.6%</td>
+            <td>+$40.743.616</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 3. Por qué son alcanzables -->
+  <div class="sec">
+    <div class="sec-lbl">¿Por qué estas metas son alcanzables?</div>
+    <div class="arg-grid">
+      <div class="arg">
+        <strong>📅 Diciembre lo hicieron el año pasado</strong>
+        En dic 2025, sin campaña activa de productos preparados, todas las tiendas crecieron entre 12% y 29% sobre su promedio mensual. Las metas de este año están construidas sobre lo que el negocio realmente demostró en ese mes.
+      </div>
+      <div class="arg">
+        <strong>📈 2026 viene con tracción acumulada</strong>
+        La red lleva el año creciendo. Las metas de diciembre no son un salto al vacío: son la continuación del ritmo que ya traen las tiendas, amplificado por la estacionalidad de fin de año.
+      </div>
+      <div class="arg">
+        <strong>🍩 La campaña convierte el flujo en ventas</strong>
+        Diciembre trae más gente a las estaciones. Los productos de temporada — buñuelos, velitas — tienen una tasa de conversión altísima: bajo precio, alta tentación, cero fricción. La campaña le da un vehículo a ese flujo.
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<!-- ═══════════════════ MI PUNTO ═══════════════════ -->
+<div id="tab-punto" class="wrap hidden">
+  <div class="sec">
+    <div class="sec-lbl">Selecciona tu tienda</div>
+    <div class="pt-selector">
+      <button class="pt-btn on" onclick="setPunto('autopista',this)">Autopista</button>
+      <button class="pt-btn" onclick="setPunto('portal',this)">Portal</button>
+      <button class="pt-btn" onclick="setPunto('campestre',this)">Campestre</button>
+      <button class="pt-btn azul" onclick="setPunto('la70',this)">La 70</button>
+      <button class="pt-btn azul" onclick="setPunto('pasoancho',this)">Pasoancho</button>
+      <button class="pt-btn azul" onclick="setPunto('noruega',this)">Noruega</button>
+    </div>
+
+    <!-- ─── AUTOPISTA ─── -->
+    <div class="pt-card vis" id="pc-autopista">
+
+      <!-- PASO 1: Por qué el % -->
+      <div class="sustento">
+        <div class="sustento-head">
+          <div class="sustento-pct">+15%</div>
+          <div class="sustento-titulo">Tu meta de crecimiento en diciembre<small>¿Por qué el 15%? Tres razones concretas.</small></div>
+        </div>
+        <div class="sustento-razones">
+          <div class="sr"><strong>Dic 2025</strong>Autopista ya creció un 27% sobre su promedio mensual ese diciembre — sin campaña activa. El 15% es menor que lo que ya demostraste.</div>
+          <div class="sr"><strong>Tracción 2026</strong>Autopista viene con crecimiento sostenido este año. No partimos de una base estancada.</div>
+          <div class="sr"><strong>Efecto campaña</strong>Halloween 2026 mostró que una activación sí mueve ventas adicionales. Diciembre tiene mucho más potencial cultural que Halloween.</div>
+        </div>
+      </div>
+
+      <!-- PASO 2: Metas de productos (con argumento conectado) -->
+      <div class="prod-bloque">
+        <div class="bloque-titulo">Metas de productos de campaña <span>43 días · Nov 24 – Ene 5</span></div>
+        <div class="prod-row">
+          <div class="pr-name">Buñuelo mini (paquete)<small>x6, x9 o x12 unidades</small></div>
+          <div class="pr-total">215 paquetes</div>
+          <div class="pr-dia">≈ 5 / día</div>
+          <div class="pr-arg">En Halloween vendiste ~107 combos sándwich en 43 días — un producto más caro y con más fricción. Los minis de buñuelo cuestan menos y tienen más atractivo visual. <b>5 paquetes al día = doblar el ritmo de Halloween</b>, que es un piso muy razonable.</div>
+        </div>
+        <div class="prod-row">
+          <div class="pr-name">Buñuelo normal<small>Unidad individual</small></div>
+          <div class="pr-total">120 unidades</div>
+          <div class="pr-dia">≈ 3 / día</div>
+          <div class="pr-arg">Canal complementario al mini. <b>3 unidades al día</b> de un producto de bajo precio y alta visibilidad en tienda.</div>
+        </div>
+        <div class="prod-row">
+          <div class="pr-name">Pan de bono<small>Unidad individual</small></div>
+          <div class="pr-total">90 unidades</div>
+          <div class="pr-dia">≈ 2 / día</div>
+          <div class="pr-arg">Producto ancla de diciembre en Colombia. <b>2 unidades al día</b> en la tienda con mayor flujo de la red es ultra conservador.</div>
+        </div>
+        <div class="prod-row">
+          <div class="pr-name">Combo buñuelos<small>Café ($5.900) o Coca Cola ($6.900) · arranque 50/50, ajuste en semana 1</small></div>
+          <div class="pr-total">55 combos</div>
+          <div class="pr-dia">≈ 2 / día</div>
+          <div class="pr-arg">Meta mínima. Con <b>927 transacciones diarias en Autopista</b>, 2 combos al día es activar el 0.2% del flujo. La versión Coca Cola genera ~$550 más de margen por unidad — según el mix real de semana 1 se ajusta el énfasis.</div>
+        </div>
+        <div class="prod-row velita">
+          <div class="pr-name">Velitas San Jorge x10 🕯<small>Nov 24 – Dic 7 · solo 14 días</small></div>
+          <div class="pr-total">70 paquetes</div>
+          <div class="pr-dia">≈ 5 / día</div>
+          <div class="pr-arg">Autopista tiene el mayor flujo de pista de la red. <b>5 velitas al día en 14 días</b> está distribuido proporcional a ese flujo.</div>
+        </div>
+        <div class="velita-pico">🕯 <strong>Pico velitas Dic 5–7:</strong> Meta esos 3 días: <strong>10 paquetes/día</strong>. Inventario máximo, visibilidad en pista y en caja.</div>
+      </div>
+
+      <!-- PASO 3: Meta en dinero -->
+      <div class="dinero-box">
+        <div class="db-lbl">Tu meta en pesos — diciembre 2026</div>
+        <div class="db-titulo">Vender $180.2M — $23.5M más que el año pasado</div>
+        <div class="db-sub">Plaza Autopista · +15% vs Dic 2025 · 31 días</div>
+      </div>
+      <div class="dias-grid">
+        <div class="dia-c">
+          <div class="dia-v yl">$5.812.785</div>
+          <div class="dia-l">Meta diaria</div>
+        </div>
+        <div class="dia-c">
+          <div class="dia-v">$5.054.596</div>
+          <div class="dia-l">Dic 2025 / día</div>
+        </div>
+        <div class="dia-c">
+          <div class="dia-v yl">+$758.189</div>
+          <div class="dia-l">Extra por día</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ─── PORTAL ─── -->
+    <div class="pt-card" id="pc-portal">
+      <div class="sustento">
+        <div class="sustento-head">
+          <div class="sustento-pct">+15%</div>
+          <div class="sustento-titulo">Tu meta de crecimiento en diciembre<small>¿Por qué el 15%? Tres razones concretas.</small></div>
+        </div>
+        <div class="sustento-razones">
+          <div class="sr"><strong>Dic 2025</strong>Portal creció un 29% sobre su promedio mensual ese diciembre. El 15% que te pedimos es casi la mitad de lo que ya hiciste.</div>
+          <div class="sr"><strong>Ticket promedio</strong>Portal tiene el ticket más alto de las tiendas grandes. Cada cliente que entra, gasta más. Eso hace que el crecimiento en dinero sea más fácil de alcanzar.</div>
+          <div class="sr"><strong>Efecto campaña</strong>Los productos de bajo precio con alta visibilidad (buñuelos) funcionan especialmente bien donde el cliente ya tiene disposición de gasto.</div>
+        </div>
+      </div>
+
+      <div class="prod-bloque">
+        <div class="bloque-titulo">Metas de productos de campaña <span>43 días · Nov 24 – Ene 5</span></div>
+        <div class="prod-row">
+          <div class="pr-name">Buñuelo mini (paquete)<small>x6, x9 o x12 unidades</small></div>
+          <div class="pr-total">155 paquetes</div>
+          <div class="pr-dia">≈ 4 / día</div>
+          <div class="pr-arg">En Halloween vendiste ~77 combos sándwich. Los minis tienen menor precio y mayor atractivo visual. <b>4 paquetes al día</b> supera ese ritmo en proporción.</div>
+        </div>
+        <div class="prod-row">
+          <div class="pr-name">Buñuelo normal<small>Unidad individual</small></div>
+          <div class="pr-total">85 unidades</div>
+          <div class="pr-dia">≈ 2 / día</div>
+          <div class="pr-arg"><b>2 unidades al día</b> de un producto de impulso en la segunda tienda más grande de la red.</div>
+        </div>
+        <div class="prod-row">
+          <div class="pr-name">Pan de bono<small>Unidad individual</small></div>
+          <div class="pr-total">65 unidades</div>
+          <div class="pr-dia">≈ 2 / día</div>
+          <div class="pr-arg"><b>2 al día</b>. Cliente de ticket alto = cliente que sí compra un complemento de $4.000.</div>
+        </div>
+        <div class="prod-row">
+          <div class="pr-name">Combo buñuelos<small>Café ($5.900) o Coca Cola ($6.900) · arranque 50/50, ajuste en semana 1</small></div>
+          <div class="pr-total">40 combos</div>
+          <div class="pr-dia">≈ 1 / día</div>
+          <div class="pr-arg"><b>1 combo al día</b> — cualquier versión cuenta. Con el flujo de Portal, es activar menos del 0.5% de las transacciones diarias. Según el mix de semana 1 se ajusta el énfasis hacia la versión más rentable.</div>
+        </div>
+        <div class="prod-row velita">
+          <div class="pr-name">Velitas San Jorge x10 🕯<small>Nov 24 – Dic 7 · solo 14 días</small></div>
+          <div class="pr-total">36 paquetes</div>
+          <div class="pr-dia">≈ 3 / día</div>
+          <div class="pr-arg">Portal vende en pista y en tienda interior. <b>Doble canal, 3 velitas al día</b> en 14 días es completamente alcanzable.</div>
+        </div>
+        <div class="velita-pico">🕯 <strong>Pico velitas Dic 5–7:</strong> Meta esos 3 días: <strong>7 paquetes/día</strong>. Visible en pista y en tienda.</div>
+      </div>
+
+      <div class="dinero-box">
+        <div class="db-lbl">Tu meta en pesos — diciembre 2026</div>
+        <div class="db-titulo">Vender $74.3M — $9.7M más que el año pasado</div>
+        <div class="db-sub">Portal del Sur · +15% vs Dic 2025 · 31 días</div>
+      </div>
+      <div class="dias-grid">
+        <div class="dia-c"><div class="dia-v yl">$2.397.455</div><div class="dia-l">Meta diaria</div></div>
+        <div class="dia-c"><div class="dia-v">$2.085.066</div><div class="dia-l">Dic 2025 / día</div></div>
+        <div class="dia-c"><div class="dia-v yl">+$312.389</div><div class="dia-l">Extra por día</div></div>
+      </div>
+    </div>
+
+    <!-- ─── CAMPESTRE ─── -->
+    <div class="pt-card" id="pc-campestre">
+      <div class="sustento">
+        <div class="sustento-head">
+          <div class="sustento-pct">+12%</div>
+          <div class="sustento-titulo">Tu meta de crecimiento en diciembre<small>¿Por qué el 12%? Tres razones concretas.</small></div>
+        </div>
+        <div class="sustento-razones">
+          <div class="sr"><strong>Segunda navidad</strong>Este es tu segundo diciembre como tienda. El primer año es siempre el más difícil — ya conoces tus clientes y tu equipo está rodado.</div>
+          <div class="sr"><strong>Factor estacional</strong>Campestre tiene el factor estacional de diciembre más alto de la red. El flujo de diciembre en tu zona naturalmente sube más que en otros puntos.</div>
+          <div class="sr"><strong>Meta conservadora</strong>12% es la meta más baja de las tiendas grandes, precisamente porque Campestre está en una fase de consolidación. No te pedimos un salto, te pedimos mantener el impulso.</div>
+        </div>
+      </div>
+
+      <div class="prod-bloque">
+        <div class="bloque-titulo">Metas de productos de campaña <span>43 días · Nov 24 – Ene 5</span></div>
+        <div class="prod-row">
+          <div class="pr-name">Buñuelo mini (paquete)<small>x6, x9 o x12 unidades</small></div>
+          <div class="pr-total">120 paquetes</div>
+          <div class="pr-dia">≈ 3 / día</div>
+          <div class="pr-arg">En Halloween vendiste ~60 combos sándwich. Los minis tienen más atractivo visual y menor precio. <b>3 paquetes al día</b> supera ese ritmo de forma razonable.</div>
+        </div>
+        <div class="prod-row">
+          <div class="pr-name">Buñuelo normal<small>Unidad individual</small></div>
+          <div class="pr-total">65 unidades</div>
+          <div class="pr-dia">≈ 2 / día</div>
+          <div class="pr-arg"><b>2 unidades al día</b>. Con el flujo del mes de diciembre, es absolutamente alcanzable.</div>
+        </div>
+        <div class="prod-row">
+          <div class="pr-name">Pan de bono<small>Unidad individual</small></div>
+          <div class="pr-total">50 unidades</div>
+          <div class="pr-dia">≈ 1 / día</div>
+          <div class="pr-arg"><b>1 pan de bono al día</b>. Meta mínima para mantener presencia del producto.</div>
+        </div>
+        <div class="prod-row">
+          <div class="pr-name">Combo buñuelos<small>Café ($5.900) o Coca Cola ($6.900) · arranque 50/50, ajuste en semana 1</small></div>
+          <div class="pr-total">30 combos</div>
+          <div class="pr-dia">≈ 1 / día</div>
+          <div class="pr-arg"><b>1 combo al día</b> — cualquier versión cuenta. Piso mínimo de activación. Según el mix de semana 1 se ajusta el énfasis hacia la versión más rentable.</div>
+        </div>
+        <div class="prod-row velita">
+          <div class="pr-name">Velitas San Jorge x10 🕯<small>Nov 24 – Dic 7 · solo 14 días</small></div>
+          <div class="pr-total">41 paquetes</div>
+          <div class="pr-dia">≈ 3 / día</div>
+          <div class="pr-arg">Campestre tiene el <b>segundo mayor flujo de pista</b> de las tiendas grandes. <b>3 velitas al día</b> es proporcional a ese flujo.</div>
+        </div>
+        <div class="velita-pico">🕯 <strong>Pico velitas Dic 5–7:</strong> Meta esos 3 días: <strong>8 paquetes/día</strong>. Diciembre es tu mes — el factor estacional más alto de la red.</div>
+      </div>
+
+      <div class="dinero-box">
+        <div class="db-lbl">Tu meta en pesos — diciembre 2026</div>
+        <div class="db-titulo">Vender $36.5M — $3.9M más que el año pasado</div>
+        <div class="db-sub">Plaza Campestre · +12% vs Dic 2025 · 31 días</div>
+      </div>
+      <div class="dias-grid">
+        <div class="dia-c"><div class="dia-v yl">$1.176.338</div><div class="dia-l">Meta diaria</div></div>
+        <div class="dia-c"><div class="dia-v">$1.050.302</div><div class="dia-l">Dic 2025 / día</div></div>
+        <div class="dia-c"><div class="dia-v yl">+$126.036</div><div class="dia-l">Extra por día</div></div>
+      </div>
+    </div>
+
+    <!-- ─── LA 70 ─── -->
+    <div class="pt-card" id="pc-la70">
+      <div class="sustento">
+        <div class="sustento-head">
+          <div class="sustento-pct" style="color:var(--blue)">+15%</div>
+          <div class="sustento-titulo">Tu meta de crecimiento en diciembre<small>¿Por qué el 15%? Tres razones concretas.</small></div>
+        </div>
+        <div class="sustento-razones">
+          <div class="sr"><strong>La sorpresa del año</strong>La 70 creció un 75% de ventas del primer al segundo semestre 2026. Esa trayectoria justifica una meta exigente.</div>
+          <div class="sr"><strong>Dic 2025 de base</strong>El diciembre pasado fue el primero para La 70 — aún sin pleno conocimiento de su cliente. Este año el punto ya tiene rodaje.</div>
+          <div class="sr"><strong>El flujo ya existe</strong>La 70 es la tienda pequeña con mayor flujo de pista. El 15% de crecimiento no requiere traer clientes nuevos, sino activar mejor los que ya pasan.</div>
+        </div>
+      </div>
+
+      <div class="prod-bloque">
+        <div class="bloque-titulo">Meta de campaña <span>Nov 24 – Dic 7 · 14 días</span></div>
+        <div class="prod-row velita">
+          <div class="pr-name">Velitas San Jorge x10 🕯<small>Venta en pista únicamente</small></div>
+          <div class="pr-total">67 paquetes</div>
+          <div class="pr-dia">≈ 5 / día</div>
+          <div class="pr-arg">La distribución de velitas está basada en el flujo real de pista por tienda. La 70 tiene el mayor flujo de pista entre las pequeñas, por eso le corresponde la meta más alta. <b>5 velitas al día en 14 días</b> — sin fricciones, el cliente las busca solo en diciembre.</div>
+        </div>
+        <div class="velita-pico">🕯 <strong>Pico velitas Dic 5–7:</strong> Meta esos 3 días: <strong>8 paquetes/día</strong>. Inventario lleno y posición visible en pista.</div>
+      </div>
+
+      <div class="dinero-box azul">
+        <div class="db-lbl">Tu meta en pesos — diciembre 2026</div>
+        <div class="db-titulo">Vender $10.9M — $1.4M más que el año pasado</div>
+        <div class="db-sub">La 70 · +15% vs Dic 2025 · 31 días</div>
+      </div>
+      <div class="dias-grid">
+        <div class="dia-c"><div class="dia-v yl">$351.763</div><div class="dia-l">Meta diaria</div></div>
+        <div class="dia-c"><div class="dia-v">$305.881</div><div class="dia-l">Dic 2025 / día</div></div>
+        <div class="dia-c"><div class="dia-v yl">+$45.882</div><div class="dia-l">Extra por día</div></div>
+      </div>
+    </div>
+
+    <!-- ─── PASOANCHO ─── -->
+    <div class="pt-card" id="pc-pasoancho">
+      <div class="sustento">
+        <div class="sustento-head">
+          <div class="sustento-pct" style="color:var(--blue)">+15%</div>
+          <div class="sustento-titulo">Tu meta de crecimiento en diciembre<small>¿Por qué el 15%? Tres razones concretas.</small></div>
+        </div>
+        <div class="sustento-razones">
+          <div class="sr"><strong>Dic 2025</strong>Pasoancho creció un 50% sobre su promedio mensual ese diciembre. El 15% de este año es un tercio de lo que ya lograste.</div>
+          <div class="sr"><strong>Ticket alto</strong>Pasoancho tiene el ticket promedio más alto de las tiendas pequeñas ($81.000). Cuando el cliente entra, gasta bien.</div>
+          <div class="sr"><strong>Tracción 2026</strong>Los últimos meses de 2026 muestran ventas sólidas y consistentes. Diciembre llega con buen impulso.</div>
+        </div>
+      </div>
+
+      <div class="prod-bloque">
+        <div class="bloque-titulo">Meta de campaña <span>Nov 24 – Dic 7 · 14 días</span></div>
+        <div class="prod-row velita">
+          <div class="pr-name">Velitas San Jorge x10 🕯<small>Venta en pista únicamente</small></div>
+          <div class="pr-total">17 paquetes</div>
+          <div class="pr-dia">≈ 1 / día</div>
+          <div class="pr-arg">Meta conservadora proporcional al flujo de Pasoancho. <b>1 velita al día</b> en 14 días es el piso mínimo para participar de la temporada navideña con producto.</div>
+        </div>
+        <div class="velita-pico">🕯 <strong>Pico velitas Dic 5–7:</strong> Meta esos 3 días: <strong>3 paquetes/día</strong>. Alta intensidad en la ventana corta.</div>
+      </div>
+
+      <div class="dinero-box azul">
+        <div class="db-lbl">Tu meta en pesos — diciembre 2026</div>
+        <div class="db-titulo">Vender $13.3M — $1.7M más que el año pasado</div>
+        <div class="db-sub">Pasoancho · +15% vs Dic 2025 · 31 días</div>
+      </div>
+      <div class="dias-grid">
+        <div class="dia-c"><div class="dia-v yl">$429.221</div><div class="dia-l">Meta diaria</div></div>
+        <div class="dia-c"><div class="dia-v">$373.235</div><div class="dia-l">Dic 2025 / día</div></div>
+        <div class="dia-c"><div class="dia-v yl">+$55.986</div><div class="dia-l">Extra por día</div></div>
+      </div>
+    </div>
+
+    <!-- ─── NORUEGA ─── -->
+    <div class="pt-card" id="pc-noruega">
+      <div class="sustento">
+        <div class="sustento-head">
+          <div class="sustento-pct" style="color:var(--blue)">+12%</div>
+          <div class="sustento-titulo">Tu meta de crecimiento en diciembre<small>¿Por qué el 12%? Tres razones concretas.</small></div>
+        </div>
+        <div class="sustento-razones">
+          <div class="sr"><strong>Dic 2025</strong>Noruega creció un 29% sobre su promedio en dic 2025. El 12% de este año es menos de la mitad de lo que ya demostraste.</div>
+          <div class="sr"><strong>Meta más conservadora</strong>El 12% es la meta más baja de toda la red. Es un piso, no un techo. Si el flujo acompaña, puedes superarlo.</div>
+          <div class="sr"><strong>Solo $15K al día</strong>La diferencia diaria que necesitas es de $15.505 pesos. Con el inventario correcto y las velitas visibles, eso es alcanzable.</div>
+        </div>
+      </div>
+
+      <div class="prod-bloque">
+        <div class="bloque-titulo">Meta de campaña <span>Nov 24 – Dic 7 · 14 días</span></div>
+        <div class="prod-row velita">
+          <div class="pr-name">Velitas San Jorge x10 🕯<small>Venta en pista únicamente</small></div>
+          <div class="pr-total">9 paquetes</div>
+          <div class="pr-dia">≈ 1 / día</div>
+          <div class="pr-arg">La meta más baja de velitas en la red, proporcional al flujo de Noruega. <b>1 velita al día en 14 días</b>. Si vendes 2 algunos días, ya superaste la meta de campaña.</div>
+        </div>
+        <div class="velita-pico">🕯 <strong>Pico velitas Dic 5–7:</strong> Meta esos 3 días: <strong>2 paquetes/día</strong>. Fácil de superar con el inventario en posición.</div>
+      </div>
+
+      <div class="dinero-box azul">
+        <div class="db-lbl">Tu meta en pesos — diciembre 2026</div>
+        <div class="db-titulo">Vender $4.5M — $480K más que el año pasado</div>
+        <div class="db-sub">Noruega · +12% vs Dic 2025 · 31 días</div>
+      </div>
+      <div class="dias-grid">
+        <div class="dia-c"><div class="dia-v yl">$144.718</div><div class="dia-l">Meta diaria</div></div>
+        <div class="dia-c"><div class="dia-v">$129.213</div><div class="dia-l">Dic 2025 / día</div></div>
+        <div class="dia-c"><div class="dia-v yl">+$15.505</div><div class="dia-l">Extra por día</div></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════ METODOLOGÍA ═══════════════════ -->
+<div id="tab-metodo" class="wrap hidden">
+  <div class="sec">
+    <div class="metodo">
+      <h4>Sustento metodológico</h4>
+      <ul>
+        <li><strong>Base de comparación:</strong> Ventas reales de diciembre 2025 por tienda, del sistema de gestión. Es el ancla de todas las metas — no un supuesto, sino lo que el negocio realmente hizo.</li>
+        <li><strong>Meta de incremento (+12% / +15%):</strong> Fijada sobre tres factores: (1) tracción real de cada tienda en 2026 ene–oct, (2) factor estacional de diciembre confirmado con datos reales 2025, (3) experiencia de campaña Halloween 2026 como referencia de activación.</li>
+        <li><strong>Productos campaña (buñuelos y pan de bono):</strong> Ritmo diario derivado del comportamiento de combos sándwich en Halloween 2026 (Autopista 107, Portal 77, Campestre 60 en 43 días), ajustado al alza por diferencia de precio y contexto cultural. Recalibrar en semana 1 con dato real.</li>
+        <li><strong>Velitas (240 paquetes total red):</strong> Distribuidas proporcionalmente al flujo de pista por tienda, medido a través de ventas de bebidas en pista durante Halloween 2026. Los días pico (Dic 5–7) concentran ~40% del total de la ventana de 14 días.</li>
+        <li><strong>ROI — atribución del 25%:</strong> Se atribuye a la campaña el 25% del incremento de ventas generales en tiendas grandes. El 75% restante es estacionalidad natural. Es un porcentaje conservador y verificable al cierre del mes.</li>
+        <li><strong>Margen tienda (38%):</strong> Estimado blended. Validar con dato real de gerencia antes de usar como número definitivo en reportes.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div style="padding-block:20px;text-align:center">
+  <p style="font-size:11px;color:var(--muted);letter-spacing:.5px">¡Congusto! · Campaña Navidad 2026 · Asesoría Marketing · Nov 2026</p>
+</div>
+
+<script>
+function setMain(tab){
+  ['resumen','punto','metodo'].forEach(t=>{
+    document.getElementById('tab-'+t).classList.toggle('hidden',t!==tab);
+  });
+  document.querySelectorAll('.tab').forEach((b,i)=>{
+    b.classList.remove('on');
+    if(['resumen','punto','metodo'][i]===tab) b.classList.add('on');
+  });
+}
+function setPunto(id,btn){
+  document.querySelectorAll('.pt-card').forEach(c=>c.classList.remove('vis'));
+  document.getElementById('pc-'+id).classList.add('vis');
+  document.querySelectorAll('.pt-btn').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+}
+</script>
+
+</body></html>
